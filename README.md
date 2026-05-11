@@ -1,6 +1,6 @@
 # 📄 AI Proposal Generator
 
-> Convert raw client requirements into a polished, professional business proposal automatically, in under 2 minutes.
+> Convert raw client requirements into a polished, professional business proposal — automatically, in under 2 minutes.
 
 Built with **FastAPI** · **Claude (Anthropic)** · **Streamlit** · **SQLite** · **WeasyPrint**
 
@@ -239,26 +239,26 @@ pytest tests/ -v
 ```
 ┌─────────────────────────────────────────┐
 │         Streamlit Frontend              │
-│  Input form · Preview · Export panel    │
+│  Input form · Preview · Export panel   │
 └──────────────┬──────────────────────────┘
                │ HTTP/REST
 ┌──────────────▼──────────────────────────┐
 │         FastAPI Backend                 │
-│  ┌──────────┐ ┌──────────┐ ┌─────────┐  │
-│  │ Proposal │ │  Export  │ │Profile  │  │
-│  │  Routes  │ │  Routes  │ │ Routes  │  │
-│  └────┬─────┘ └────┬─────┘ └────┬────┘  │
-│       │            │            │       │
-│  ┌────▼────────────▼────────────▼────┐  │
-│  │           Core Engine             │  │
-│  │  PromptEngine · LLMClient         │  │
-│  │  ProposalBuilder · ExportService  │  │
-│  └───────────────────────────────────┘  │
+│  ┌──────────┐ ┌──────────┐ ┌─────────┐ │
+│  │ Proposal │ │  Export  │ │Profile  │ │
+│  │  Routes  │ │  Routes  │ │ Routes  │ │
+│  └────┬─────┘ └────┬─────┘ └────┬────┘ │
+│       │             │            │      │
+│  ┌────▼─────────────▼────────────▼────┐ │
+│  │           Core Engine             │ │
+│  │  PromptEngine · LLMClient        │ │
+│  │  ProposalBuilder · ExportService │ │
+│  └───────────────────────────────────┘ │
 └──────────────┬──────────────────────────┘
                │
 ┌──────────────▼──────────────────────────┐
 │         Persistence Layer               │
-│  SQLite DB · /generated · /prompts      │
+│  SQLite DB · /generated · /prompts     │
 └─────────────────────────────────────────┘
 ```
 
